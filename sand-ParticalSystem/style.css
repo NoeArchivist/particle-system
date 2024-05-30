@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  cursor: url('pencil2.png'),auto;
+}
+
+#buttonContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 1; /* Ensure the button container is on top */
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensure the canvas is below the button container */
+}
+#buttonContainer{
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align:middle;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(194, 178, 128);
+}
+
+#colorPicker{
+  display:table-cell;
+  width: 35px;
+  height: 35px;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+}
+#colorPicker::-webkit-color-swatch{
+  border-radius: 5px;
+  border: none;
+}
+#colorPicker::-moz-color-swatch{
+  border-radius: 5px;
+  border: none;
+}
+#buttonContainer div{
+  display: flex;
+  flex-direction: column;
+  vertical-align:middle;
+  margin-top: 15px;
+}
+.down-button{
+  cursor: pointer;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 2px solid rgb(194, 178, 128);
+  border-radius: 5px;
+}
+.color-number{
+  width: 20px;  
+  display: inline-block; 
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+.up-button{
+  cursor: pointer;
+  border: 2px solid rgb(194, 178, 128);
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
